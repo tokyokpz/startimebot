@@ -4,57 +4,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tokyo After Dark Bot</title>
+
+  <title>StarTime</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      background: #111;
-      color: #eee;
+    * {
+      box-sizing: border-box;
     }
 
-```
-h1, h2 {
-  color: #fff;
-}
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0b0b0f;
+      color: #d8d8df;
+      line-height: 1.7;
+    }
 
-a {
-  color: #aaa;
-}
+    .container {
+      width: min(850px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0;
+    }
 
-.links {
-  margin-top: 30px;
-}
+    .hero {
+      padding: 55px 0 50px;
+      border-bottom: 1px solid #292930;
+    }
 
-.links a {
-  display: block;
-  margin: 15px 0;
-  padding: 15px;
-  border: 1px solid #444;
-  text-decoration: none;
-}
+    .brand {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #9999a5;
+      margin-bottom: 18px;
+    }
 
-.links a:hover {
-  background: #222;
-}
-```
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+    }
 
+    .description {
+      max-width: 600px;
+      margin-top: 22px;
+      font-size: 17px;
+      color: #9999a5;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .card {
+      display: block;
+      padding: 22px;
+      border: 1px solid #292930;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #101014;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #555560;
+      background: #15151a;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .card-description {
+      display: block;
+      font-size: 14px;
+      color: #777782;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 25px;
+      border-top: 1px solid #292930;
+      color: #666670;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 0;
+      }
+
+      .hero {
+        padding: 35px 0 40px;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
+
 </head>
 
 <body>
-  <h1>Tokyo After Dark Bot</h1>
 
-  <p>
-    Official Terms of Service and Privacy Policy for the Tokyo After Dark Discord Bot.
-  </p>
+<main class="container">
 
-  <div class="links">
-    <a href="terms.html">Terms of Service</a>
-    <a href="privacy.html">Privacy Policy</a>
-  </div>
+  <section class="hero">
+    <div class="brand">Discord Bot</div>
+
+```
+<h1>StarTime</h1>
+
+<p class="description">
+  A Discord bot built to provide community utilities,
+  voice-time tracking, statistics, leaderboards, and more.
+</p>
+```
+
+  </section>
+
+  <section class="links">
+
+```
+<a class="card" href="terms.html">
+  <span class="card-title">Terms of Service</span>
+  <span class="card-description">
+    The terms and conditions for using StarTime.
+  </span>
+</a>
+
+<a class="card" href="privacy.html">
+  <span class="card-title">Privacy Policy</span>
+  <span class="card-description">
+    How StarTime processes and handles Discord-related data.
+  </span>
+</a>
+```
+
+  </section>
+
+  <footer>
+    © 2026 StarTime. All rights reserved.
+  </footer>
+
+</main>
+
 </body>
 </html>
